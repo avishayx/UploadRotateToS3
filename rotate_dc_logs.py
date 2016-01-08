@@ -117,8 +117,8 @@ def getAwsParamsFromZoo():
     zooBase="/site/archive/logs/datacollection/aws"
     awsEndpoint=zkGet(zooBase+"/endpoint") # "s3-us-west-2.amazonaws.com" 
     awsBucket=zkGet(zooBase+"/bucket") # "lab-test-log-dc" 
-    awsUser=zkGet(zooBase+"/user") #"AKIAJ6P3OIYAWLS2KEIQ"
-    awsPass=zkGet(zooBase+"/password") #"eqF66qG8w73nrMA5rq4Uxi4LIlyqoUVzgZUDAKgU"
+    awsUser=zkGet(zooBase+"/user") #"ss"
+    awsPass=zkGet(zooBase+"/password") #"ss"
     
     if (not awsEndpoint) or (not awsBucket) or (not awsUser) or (not awsPass):
         exitFunction ("One of the parameters is missing") 
